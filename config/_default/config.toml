@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://new-forum.dh7zoj.top"
+baseurl = "https://forum.dh7z.cn"
 languageCode = "zh-Hans"
 title = "Dh7z - Forum"
 
