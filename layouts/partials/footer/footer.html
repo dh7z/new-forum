@@ -6,6 +6,9 @@
             {{ .Site.Params.footer.since }} - 
         {{ end }}
         {{ now.Format "2006" }} {{ .Site.Title }}
+        {{ with .Site.Params.footer.customText }}
+            <br/> {{ . | safeHTML }}
+        {{ end }}
     </section>
     <section class="powerby">
         {{- $Theme := printf `<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">浙ICP备2022016925号-1</a>` -}}
