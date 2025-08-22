@@ -11,11 +11,7 @@
             <br/> {{ . | safeHTML }}
         {{ end }}
     </section>
-    <section class="powerby">
-        {{- $Generator := `<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>` -}}
+    <section class="ICP">
         {{- $Theme := printf `<b><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener" data-version="%s">浙ICP备2022016925号-1</a></b>` $ThemeVersion -}}
-        {{- $DesignedBy := `<a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>` -}}
-        {{ T "footer.builtWith" (dict "Generator" $Generator) | safeHTML }} <br />
-        {{ T "footer.designedBy" (dict "Theme" $Theme "DesignedBy" $DesignedBy) | safeHTML }}
     </section>
 </footer>
